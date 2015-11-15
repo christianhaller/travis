@@ -10,7 +10,7 @@
                 '[name="url"]': url
             }, true);*/
 
-            this.wait(7000, function() {
+            this.wait(17000, function() {
                 this.echo(this.getCurrentUrl());
                 test.assertEvalEquals(function () {
                     return $('.js-username').text();
