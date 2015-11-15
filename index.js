@@ -2,7 +2,7 @@
 (function (casper) {
     'use strict';
     var url = 'http://www.tripadvisor.com/members/christianhaller';
-    casper.userAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:42.0) Gecko/20100101 Firefox/42.0');
+    //casper.userAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:42.0) Gecko/20100101 Firefox/42.0');
 
 
     casper.on("resource.error", function(resourceError){
