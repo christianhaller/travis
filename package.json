@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/christianhaller/travis#readme",
   "devDependencies": {
-    "casperjs": "^1.1.0-beta3"
+    "casperjs": "git://github.com/n1k0/casperjs.git#master"
   }
 }
