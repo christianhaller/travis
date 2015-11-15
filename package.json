@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "casperjs test index.js"
+    "test": "casperjs --ssl-protocol=tlsv1 test index.js"
   },
   "repository": {
     "type": "git",
