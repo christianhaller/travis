@@ -1,0 +1,22 @@
+{
+  "name": "travis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "casperjs test index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianhaller/travis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christianhaller/travis/issues"
+  },
+  "homepage": "https://github.com/christianhaller/travis#readme",
+  "devDependencies": {
+    "casperjs": "^1.1.0-beta3"
+  }
+}
