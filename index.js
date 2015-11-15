@@ -6,12 +6,8 @@
 
     casper.test.begin('basic functions', function (test) {
 
-        casper.start('http://stage.download-your-travelmap.christianhaller.com/', function () {
-            this.echo(this.getCurrentUrl());
-            this.fill('.url-form', {
-                'url': url
-            }, true);
-
+        casper.start('http://stage.download-your-travelmap.christianhaller.com/?url='+url, function () {
+          
             this.wait(5000, function() {
                 test.assertEvalEquals(function () {
                     return $('.js-username').text();
