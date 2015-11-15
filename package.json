@@ -1,7 +1,7 @@
 {
   "name": "travis",
   "version": "1.0.0",
-  "description": "",
+  "description": "test",
   "main": "index.js",
   "scripts": {
     "test": "casperjs test index.js"
