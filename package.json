@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "casperjs --ssl-protocol==tlsv1 --web-security=false --ignore-ssl-errors=true test index.js"
+    "test": "casperjs --engine=slimerjs test index.js"
   },
   "repository": {
     "type": "git",

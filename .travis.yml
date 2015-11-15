@@ -3,6 +3,7 @@ node_js:
   - "5.0"
 
 install:
+  - npm install -g slimerjs
   - npm install
 script:
   - npm test
