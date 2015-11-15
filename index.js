@@ -4,11 +4,11 @@
     var url = 'http://www.tripadvisor.com/members/christianhaller';
     casper.test.begin('basic functions', function (test) {
 
-        casper.start('http://stage.download-your-travelmap.christianhaller.com/', function () {
-            this.echo(this.getCurrentUrl());
+        casper.start('http://stage.download-your-travelmap.christianhaller.com/?url='+url, function () {
+            /*this.echo(this.getCurrentUrl());
             this.fillSelectors('.url-form', {
                 '[name="url"]': url
-            }, true);
+            }, true);*/
 
             this.wait(7000, function() {
                 this.echo(this.getCurrentUrl());
