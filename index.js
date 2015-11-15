@@ -6,8 +6,8 @@
 
         casper.start('http://stage.download-your-travelmap.christianhaller.com/', function () {
             this.echo(this.getCurrentUrl());
-            casper.fill('.url-form', {
-                'url': url
+            this.fillSelectors('.url-form', {
+                '[name="url"]': url
             }, true);
 
             this.wait(7000, function() {
