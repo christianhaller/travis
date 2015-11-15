@@ -21,10 +21,7 @@
                 }, 'christianhaller', 'correct name');
             });
 
-            var js = this.evaluate(function () {
-                return document;
-            });
-            console.log(JSON.stringify(js));
+           
 
         });
 
