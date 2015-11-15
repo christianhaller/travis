@@ -10,8 +10,12 @@
                 '[name="url"]': url
             }, true);*/
 
-            this.wait(17000, function() {
+            this.wait(6000, function() {
                 this.echo(this.getCurrentUrl());
+                test.assertEvalEquals(function () {
+                    return $('.pure-alert-error').text();
+                }, ' ', 'no error');
+
                 test.assertEvalEquals(function () {
                     return $('.js-username').text();
                 }, 'christianhaller', 'correct name');
