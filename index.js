@@ -8,13 +8,18 @@
 
         casper.start('http://stage.download-your-travelmap.christianhaller.com/?url='+url, function () {
 
+
+
+
+
+        });
+        casper.then(function(){
             this.wait(8000, function() {
                 test.assertEvalEquals(function () {
-                    return $('.js-username').text();
+                    return __utils__.findOne('.js-username').textContent;
+                    //return $('.js-username').text();
                 }, 'christianhaller', 'correct name');
             });
-
-
 
         });
 
