@@ -7,8 +7,8 @@
     casper.test.begin('basic functions', function (test) {
 
         casper.start('http://stage.download-your-travelmap.christianhaller.com/?url='+url, function () {
-          
-            this.wait(5000, function() {
+
+            this.wait(8000, function() {
                 test.assertEvalEquals(function () {
                     return $('.js-username').text();
                 }, 'christianhaller', 'correct name');
