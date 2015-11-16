@@ -3,7 +3,7 @@
 	'use strict';
 	var tripAdvisorProfileUrl = 'http://www.tripadvisor.com/members/christianhaller',
 		stageUrl = 'http://stage.download-your-travelmap.christianhaller.com/';
-	
+
 	casper.options.viewportSize = {width: 1600, height: 950};
 	casper.on("resource.error", function (resourceError) {
 		console.log('Unable to load resource (#' + resourceError.id + 'URL:' + resourceError.url + ')');
