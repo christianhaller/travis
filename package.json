@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "casperjs test index.js"
+    "test": "casperjs test index.js --engine=slimerjs"
   },
   "repository": {
     "type": "git",
