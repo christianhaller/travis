@@ -1,8 +1,10 @@
 node_js:
  - "5.0"
-script:
+
+before_script:
  - npm install slimerjs
- - ./node_modules/slimerjs/bin/slimerjs --version
- - echo $TRAVIS_BUILD_NUMBER
+ - export SLIMERJS="./node_modules/slimerjs/bin/slimerjs"
+script:
+ - slimerjs --version
 
 
